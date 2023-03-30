@@ -2,7 +2,7 @@
 
 namespace MelodiousApp.Services.Interface
 {
-    internal interface ISongService
+    public interface ISongService
     {
         public Task<List<SongDto>> GetAll();
         public Task<SongDto> GetById(int id);

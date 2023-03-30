@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MelodiousApp.DataAccess\MelodiousApp.DataAccess.csproj" />
+    <ProjectReference Include="..\MelodiousApp.DataTrasfer\MelodiousApp.DataTrasfer.csproj" />
+    <ProjectReference Include="..\MelodiousApp.Models\MelodiousApp.Models.csproj" />
+  </ItemGroup>
+
 </Project>
