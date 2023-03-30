@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MelodiousApp.DataAccess.Repository.Interfaces
 {
-    public interface ISongRepository : IBaseRepository<Song>
+    public interface IPlayListSongRepository : IBaseRepository<PlayListSong>
     {
 
     }

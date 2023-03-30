@@ -1,0 +1,20 @@
+﻿using MelodiousApp.DataAccess.Persistence;
+using MelodiousApp.DataAccess.Repository.Base;
+using MelodiousApp.DataAccess.Repository.Interfaces;
+using MelodiousApp.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MelodiousApp.DataAccess.Repository.Implementation
+{
+    public class ArtistRepository : BaseRepository<Artist>, IArtistRepository
+    {
+        public ArtistRepository(MelodiousContext melodiousContext) : base(melodiousContext)
+        {
+
+        }
+    }
+}
