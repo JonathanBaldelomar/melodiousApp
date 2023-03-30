@@ -1,6 +1,6 @@
 ﻿namespace MelodiousApp.DataTrasfer
 {
-    public class AlbumDto
+    public class ArtistDto
     {
         public int Id { get; set; }
         public string Title { get; set; }

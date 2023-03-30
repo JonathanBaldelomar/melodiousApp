@@ -1,5 +1,6 @@
-﻿using BooksModels;
+﻿using MelodiousApp.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Graph;
 
 namespace MelodiousApp.DataAccess.Persistence
 {
