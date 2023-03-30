@@ -1,12 +1,7 @@
-﻿using MelodiousApp.DataTrasfer.Mappers;
-using MelodiousApp.DataTrasfer;
+﻿using MelodiousApp.DataTrasfer;
+using MelodiousApp.DataTrasfer.Mappers;
 using MelodiousApp.Models;
 using MelodiousApp.Services.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MelodiousApp.Services.Services
 {
@@ -17,34 +12,34 @@ namespace MelodiousApp.Services.Services
         {
             _credentialRepository = credentialRepository;
         }
-        public async Task<int> AddNew(UserDto userDto)
+        public async Task<int> AddNew(CredentialDto credentialDto)
         {
-            User user = UserMapper.DtoToModel(userDto);
-            var userCreated = await _userRepository.Create(user);
-            return userCreated.Id;
+            User credential = CredentialMapper.DtoToModel(credentialDto);
+            var credentialCreated = await _credentialRepository.Create(credential);
+            return credentialCreated.Id;
         }
         public async Task<int> Delete(int id)
         {
-            var userDeleted = await _userRepository.Delete(id);
-            return userDeleted.Id;
+            var credentialDeleted = await _credentialRepository.Delete(id);
+            return credentialDeleted.Id;
         }
-        public async Task<List<UserDto>> GetAll()
+        public async Task<List<CredentialDto>> GetAll()
         {
-            var users = await _userRepository.GetAll();
-            var usersDto = users.Select(UserMapper.ModelToDto).ToList();
-            return usersDto;
+            var credentials = await _credentialRepository.GetAll();
+            var credentialsDto = credentials.Select(CredentialMapper.ModelToDto).ToList();
+            return credentialsDto;
         }
 
-        public async Task<UserDto> GetById(int id)
+        public async Task<CredentialDto> GetById(int id)
         {
-            var user = await _userRepository.GetOne(id);
-            return UserMapper.ModelToDto(user);
+            var credential = await _credentialRepository.GetOne(id);
+            return CredentialMapper.ModelToDto(credential);
         }
-        public async Task<UserDto> Update(UserDto userDto)
+        public async Task<CredentialDto> Update(CredentialDto credentialDto)
         {
-            var user = UserMapper.DtoToModel(userDto);
-            var userModel = await _userRepository.Update(user);
-            return UserMapper.ModelToDto(userModel);
+            var credential = CredentialMapper.DtoToModel(credentialDto);
+            var credentialModel = await _credentialRepository.Update(credential);
+            return CredentialMapper.ModelToDto(credentialModel);
         }
     }
 }
