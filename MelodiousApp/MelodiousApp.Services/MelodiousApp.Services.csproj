@@ -7,7 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\MelodiousApp.DataTrasfer\MelodiousApp.DataTrasfer.csproj" />
+=======
+    <ProjectReference Include="..\MelodiousApp.DataAccess\MelodiousApp.DataAccess.csproj" />
+    <ProjectReference Include="..\MelodiousApp.DataTrasfer\MelodiousApp.DataTrasfer.csproj" />
+    <ProjectReference Include="..\MelodiousApp.Models\MelodiousApp.Models.csproj" />
+>>>>>>> 9d4e5190182c5ef0b25c3f0ad11be77850add52e
   </ItemGroup>
 
 </Project>
