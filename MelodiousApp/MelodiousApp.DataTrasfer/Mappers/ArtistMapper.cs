@@ -1,9 +1,4 @@
 ﻿using MelodiousApp.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MelodiousApp.DataTrasfer.Mappers
 {
@@ -22,7 +17,7 @@ namespace MelodiousApp.DataTrasfer.Mappers
             return new ArtistDto()
             {
                 Id = artist.Id,
-                Name = artist.Title,
+                Name = artist.Name,
                 Biography = artist.Biography
             };
         }
