@@ -11,4 +11,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MelodiousApp.DataAccess\MelodiousApp.DataAccess.csproj" />
+    <ProjectReference Include="..\MelodiousApp.DataTrasfer\MelodiousApp.DataTrasfer.csproj" />
+    <ProjectReference Include="..\MelodiousApp.Models\MelodiousApp.Models.csproj" />
+    <ProjectReference Include="..\MelodiousApp.Services\MelodiousApp.Services.csproj" />
+  </ItemGroup>
+
 </Project>
