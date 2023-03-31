@@ -24,15 +24,15 @@ namespace MelodiousApp.Services.Services
         }
         public async Task<List<ArtistDto>> GetAll()
         {
-            var albums = await _albumRepository.GetAll();
-            var albumsDto = albums.Select(albumMapper.ModelToDto).ToList();
-            return albumsDto;
+            var artists = await _artistRepository.GetAll();
+            var artistsDto = artists.Select(ArtistMapper.ModelToDto).ToList();
+            return artistsDto;
         }
 
         public async Task<ArtistDto> GetById(int id)
         {
             var artist = await _artistRepository.GetOne(id);
-            return artistMapper.ModelToDto(artist);
+            return ArtistMapper.ModelToDto(artist);
         }
         public async Task<ArtistDto> Update(ArtistDto artistDto)
         {
