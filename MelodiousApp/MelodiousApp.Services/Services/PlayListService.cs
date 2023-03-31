@@ -1,4 +1,5 @@
-﻿using MelodiousApp.DataTrasfer;
+﻿using MelodiousApp.DataAccess.Repository.Interfaces;
+using MelodiousApp.DataTrasfer;
 using MelodiousApp.DataTrasfer.Mappers;
 using MelodiousApp.Models;
 using MelodiousApp.Services.Interface;
