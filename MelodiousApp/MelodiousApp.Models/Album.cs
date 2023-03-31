@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MelodiousApp.Models
 {
-    public class Artist : BaseEntity
+    public class Album : BaseEntity
     {
         public string Title { get; set; } = null!;
         public DateTime? ReleaseDate { get; set; }
