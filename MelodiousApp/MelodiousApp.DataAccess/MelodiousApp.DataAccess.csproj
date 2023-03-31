@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+    <ProjectReference Include="..\MelodiousApp.Models\MelodiousApp.Models.csproj" />
+=======
     <Folder Include="Migrations\" />
     <Folder Include="Repository\" />
+>>>>>>> 9d4e5190182c5ef0b25c3f0ad11be77850add52e
   </ItemGroup>
 
 </Project>

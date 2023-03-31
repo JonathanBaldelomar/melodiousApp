@@ -11,7 +11,7 @@ namespace MelodiousApp.Models
         public virtual Song Song { get; set; } = null!;
         public int SongId { get; set; }
 
-        public virtual Album Album { get; set; } = null!;
+        public virtual Artist Album { get; set; } = null!;
         public int AlbumId { get; set; }
     }
 }
